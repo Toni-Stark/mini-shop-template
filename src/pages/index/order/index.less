@@ -1,0 +1,134 @@
+.index {
+  width: 100%;
+  background: #1e212a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &_zone {
+    flex: 1;
+    width: 100%;
+    overflow-y: scroll;
+    background: #f5f5f5;
+    padding: 0 10Px;
+    box-sizing: border-box;
+
+    .zone_label {
+      display: flex;
+      border-radius: 4Px;
+      justify-content: space-between;
+      background: #ffffff;
+      margin-top: 13Px;
+      height: 44Px;
+      color: #101010;
+      font-size: 14Px;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 16Px;
+      &_image {
+        width: 13Px;
+      }
+      .logo {
+        display: flex;
+        color: #101010;
+        font-size: 14Px;
+        align-items: center;
+        &_image {
+          width: 24Px;
+          height: 24Px;
+          margin-right: 10Px;
+        }
+      }
+      .choose {
+        width: 20Px;
+        height: 20Px;
+        margin-right: 10Px;
+      }
+    }
+    .zone_card {
+      background: #ffffff;
+      margin-top: 13Px;
+      padding: 16Px;
+      box-sizing: border-box;
+      .label_content {
+        display: flex;
+        &_image {
+          width: 90Px;
+          height: 90Px;
+          border-radius: 5Px;
+        }
+        &_view {
+          display: flex;
+          flex-direction: column;
+          height: 90Px;
+          justify-content: space-between;
+          flex: 1;
+          padding: 7Px 0;
+          margin-left: 16Px;
+          box-sizing: border-box;
+          .title {
+            color: #101010;
+            font-size: 12Px;
+            margin-top: 3Px;
+          }
+          .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &_price {
+              display: flex;
+              align-items: flex-end;
+              .main_price {
+                color: #101010;
+                font-size: 14Px;
+              }
+              .eval_price {
+                color: #999999;
+                font-size: 12Px;
+              }
+            }
+            &_count {
+              display: flex;
+              align-items: center;
+              &_num {}
+              &_spu {}
+            }
+          }
+        }
+      }
+    }
+  }
+  &_footer {
+    height: 79Px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 25Px 16Px;
+    background: #ffffff;
+    &_view {
+      display: flex;
+      align-items: center;
+      &_text {
+        color: #101010;
+        font-size: 14Px;
+      }
+      &_price {
+        color: #FF2525;
+        font-size: 16Px;
+      }
+    }
+    &_confirm {
+      border-radius: 30Px;
+      background-color: rgba(255, 37, 37, 0.83);
+      color: #FFFFFF;
+      font-size: 14Px;
+      width: 151Px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35Px;
+      line-height: 35Px;
+    }
+  }
+}
